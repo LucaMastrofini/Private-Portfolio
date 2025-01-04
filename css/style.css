@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    background-color: #222222;
+    color: white;
+}
+
+.hover-zoom {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+.hover-zoom-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-zoom-icon:hover {
+    transform: scale(1.20);
+}
+
+header {
+    color:white;
+    background-color: #222222;
+    z-index: 1000;
+    position: fixed;
+}
+
+.navbar {
+    background-color: #222222;
+}
+
+section {
+    position: relative;
+    z-index: 1; /* Ensure sections are below the header */
+}
+
+
+.highlight {
+    color: #1C5D99;
+}
+
+.slide-down {
+    max-height: 300px;
+    /* Adjust based on the content height */
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.slide-up {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+/* Ensure overflow is hidden to prevent content overflow */
+#nav-links {
+    overflow: hidden;
+}
+
+.break-line {
+    height: 2px;
+    width: 100%;
+    max-width: 1240px;
+    background: linear-gradient(to right, #BBCDE5 , #1C5D99);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.section-title {
+    color: #1C5D99;
+    letter-spacing: 2px;
+}
+
+.paragraph-title {
+    color: #BBCDE5;
+}
+
+.card-title {
+    color: white;
+}
+
+.skill-card {
+    background-color: #222222;
+}
+
+.rounded-lg {
+    background-color: transparent !important;
+}
+
+  
+
+  

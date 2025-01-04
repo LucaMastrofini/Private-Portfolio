@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca Mastrofini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mb-2 z-50">
+        <div
+            class="navbar fixed top-0 shadow-xl flex w-full flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
+            <p class="flex items-center text-2xl font-black">
+                <span class="highlight">Luca&nbsp</span> <span class="logo">Mastrofini</span>
+            </p>
+            <input type="checkbox" class="peer hidden" id="navbar-open" />
+            <label class="absolute top-5 right-7 cursor-pointer md:hidden" for="navbar-open">
+                <span class="sr-only">Toggle Navigation</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </label>
+            <nav aria-label="Header Navigation"
+                class="peer-checked:mt-4 peer-checked:max-h-56 max-h-0 w-full items-center justify-end transition-all overflow-hidden md:max-h-full">
+                <ul class="flex flex-col justify-end items-center space-y-2 md:flex-row md:space-y-0">
+                    <li class="md:mr-12"><a href="#home">Home</a></li>
+                    <li class="md:mr-12"><a href="#experience">Experience</a></li>
+                    <li class="md:mr-12"><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Sections -->
+    <section id="home"
+        class="flex flex-col-reverse md:flex-row items-center justify-center p-6 min-h-screen m-auto max-w-[1240px] mt-16">
+        <div class="text-center md:flex-1 min-w-[300px] p-4">
+            <h1 class="text-4xl font-bold text-gray-100">Hi there! I’m <span class="highlight">Luca</span></h1>
+            <p class="mt-4 text-lg md:text-2xl text-gray-300">
+                A full-stack software Engineer skilled in
+                <span class="highlight"><b>API</b></span> development and integration.<br>
+
+            </p>
+            <div class="flex justify-center items-center space-x-6 mt-4">
+                <a href="https://github.com" target="_blank" class="text-2xl hover-zoom-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="text-2xl hover-zoom-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://leetcode.com" target="_blank" class="text-2xl hover-zoom-icon">
+                    <i class="fa-solid fa-code"></i>
+                </a>
+            </div>
+        </div>
+        <div class="md:flex-1 [300px] p-4 items-center">
+            <img src="assets/hero_portfolio.png" alt="Luca's Photo"
+                class="w-48 h-48 md:w-80 md:h-80 mx-auto hover-zoom">
+        </div>
+    </section>
+
+    <div class="break-line"></div>
+
+    <section id="experience" class="m-auto py-8 max-w-[1240px] min-h-screen flex items-center">
+        <div>
+            <p class="px-2 pb-2 section-title uppercase text-xl tracking-widest">Experience</p>
+            <br>
+            <h2 class="paragraph-title px-2 text-xl"><b>Work</b></h2>
+            <div class="mx-auto md:grid grid-cols-3 gap-4 py-4 px-2 mb-4">
+                <!-- Card 1 -->
+                <div class="h-auto w-full rounded-xl shadow-md shadow-gray-500/50 p-4 border-2 border-white mb-4">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-xl font-bold card-title">LTIMindtree</h2>
+                        <span class="text-lg text-gray-500">2022-2024</span>
+                    </div>
+                    <h1 class="text-lg text-white">Software Engineer</h1>
+                    <hr class="border-gray-500 my-2">
+                    <ul class="text-white text-md list-disc list-inside">
+                        <li>Developed and tested client software under deadlines, working closely with cross-functional
+                            teams.</li>
+                        <li>Reviewed and solved more then 50 Whitehat vulnerabilities. </li>
+                        <li>Participated in multiple Toastmasters classes.</li>
+                    </ul>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div class="h-auto w-full rounded-xl shadow-md shadow-gray-500/50 p-4 border-2 border-white mb-4">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-xl font-bold card-title">Wiley Edge</h2>
+                        <span class="text-lg text-gray-500">2022</span>
+                    </div>
+                    <h1 class="text-lg text-white">Software Engineer Trainee</h1>
+                    <hr class="border-gray-500 my-2">
+                    <ul class="text-white text-md list-disc list-inside">
+                        <li>Completed 3-month training on building a full CRUD web application following the
+                            MVC pattern using Java, Springboot and Angular.</li>
+                        <li>Completed 3-month Salesforce training covering Data Model, Sales Cloud, Apex, SOQL, API
+                            Integration, LWC, Aura, and Visualforce.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="h-auto w-full rounded-xl shadow-md shadow-gray-500/50 p-4 border-2 border-white mb-4">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-xl font-bold card-title">University of Milan</h2>
+                        <span class="text-lg text-gray-500">2020-2021</span>
+                    </div>
+                    <h1 class="text-lg text-white">Intership</h1>
+                    <hr class="border-gray-500 my-2">
+                    <ul class="text-white text-md list-disc list-inside">
+                        <li>Developed a virtual synthesizer featuring 2 different oscillators.</li>
+                        <li>Included real-time adjustable parameters such as pitch, waveform type, frequency and
+                            amplitude modulation, and ADSR, allowing users to create diverse sounds.</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <h2 class="paragraph-title px-2 pb-2 text-xl"><b>Skills</b></h2>
+            <div class="mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 py-4 px-2">
+                <div
+                    class="w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-2 hover:scale-110 ease-in-out duration-300">
+                    <div class="grid grid-cols-3 gap-2 justify-center items-center text-center">
+                        <div class="w-12 h-12 bg-transparent overflow-hidden flex items-center justify-center">
+                            <img src="assets/JAVA.png" alt="Logo" class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="col-span-2">
+                            <h2 class="text-xl font-bold card-title">Java</h2>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-2 hover:scale-110 ease-in-out duration-300">
+                    <div class="grid grid-cols-3 gap-2 justify-center items-center text-center">
+                        <div class="w-12 h-12 bg-transparent overflow-hidden flex items-center justify-center">
+                            <img src="assets/SPRING.png" alt="Logo" class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="col-span-2">
+                            <h2 class="text-xl font-bold card-title">Spingboot</h2>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-2 hover:scale-110 ease-in-out duration-300">
+                    <div class="grid grid-cols-3 gap-2 justify-center items-center text-center">
+                        <div class="w-12 h-12 bg-transparent overflow-hidden flex items-center justify-center ">
+                            <img src="assets/ANGULAR.png" alt="Logo"
+                                class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="col-span-2">
+                            <h2 class="text-xl font-bold card-title">Angular</h2>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-2 hover:scale-110 ease-in-out duration-300">
+                    <div class="grid grid-cols-3 gap-2 justify-center items-center text-center">
+                        <div class="w-12 h-12 bg-transparent overflow-hidden flex items-center justify-center ">
+                            <img src="assets/JS.png" alt="Logo"
+                                class="w-full h-full object-contain bg-transparent rounded-md">
+                        </div>
+                        <div class="col-span-2">
+                            <h2 class="text-xl font-bold card-title">JavaScript</h2>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-2 hover:scale-110 ease-in-out duration-300">
+                    <div class="grid grid-cols-3 gap-2 justify-center items-center text-center">
+                        <div class="w-12 h-12 bg-transparent overflow-hidden flex items-center justify-center ">
+                            <img src="assets/TS.png" alt="Logo"
+                                class="w-full h-full object-contain bg-transparent rounded-md">
+                        </div>
+                        <div class="col-span-2">
+                            <h2 class="text-xl font-bold card-title">TypeScript</h2>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-2 hover:scale-110 ease-in-out duration-300">
+                    <div class="grid grid-cols-3 gap-2 justify-center items-center text-center">
+                        <div class="w-12 h-12 bg-transparent overflow-hidden flex items-center justify-center ">
+                            <img src="assets/SQL.png" alt="Logo" class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="col-span-2">
+                            <h2 class="text-xl font-bold card-title">MySQL</h2>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-2 hover:scale-110 ease-in-out duration-300">
+                    <div class="grid grid-cols-3 gap-2 justify-center items-center text-center">
+                        <div class="w-12 h-12 bg-transparent overflow-hidden flex items-center justify-center ">
+                            <img src="assets/C++.png" alt="Logo" class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="col-span-2">
+                            <h2 class="text-xl font-bold card-title">C++</h2>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-2 hover:scale-110 ease-in-out duration-300">
+                    <div class="grid grid-cols-3 gap-2 justify-center items-center text-center">
+                        <div class="w-12 h-12 bg-transparent overflow-hidden flex items-center justify-center ">
+                            <img src="assets/TAILWIND.png" alt="Logo"
+                                class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="col-span-2">
+                            <h2 class="text-xl font-bold card-title">Tailwind</h2>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-2 hover:scale-110 ease-in-out duration-300">
+                    <div class="grid grid-cols-3 gap-2 justify-center items-center text-center">
+                        <div class="w-12 h-12 bg-transparent overflow-hidden flex items-center justify-center ">
+                            <img src="assets/GIT.png" alt="Logo" class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="col-span-2">
+                            <h2 class="text-xl font-bold card-title">Git</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="break-line"></div>
+    <section id="projects" class="m-auto max-w-[1240px] min-h-screen flex flex-col items-center justify-center py-8">
+        <p class="w-full px-2 pb-2 section-title uppercase text-xl tracking-widest">PROJECTS</p>
+        <br>
+        <div class="mx-auto lg:grid lg:grid-cols-2 gap-4 pt-4 px-2">
+            <div
+                class="md:grid grid-cols-2 w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-4 gap-4 mb-4">
+                <!-- Image Container -->
+                <div class="w-full h-full bg-transparent rounded-md">
+                    <img src="assets/prochords.png" class="w-full h-full object-cover rounded-md">
+                </div>
+
+                <!-- Content Section -->
+                <div class="flex flex-col justify-between sm:mb-4">
+                    <!-- Title and Links -->
+                    <div class="flex items-center justify-between mb-2">
+                        <h2 class="text-xl font-bold text-gray-100 ">ProChords.online</h2>
+                        <div class="flex space-x-2">
+                            <a href="https://prochords.online/" target="_blank" class="w-6 h-6">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="text-sm text-gray-400 text-justify">
+                        ProChords is an online web app that helps users craft engaging chord progressions by suggesting
+                        chords based on their previous choices. Users can customize chords by adjusting the octave,
+                        adding extensions, or selecting inversions. Once satisfied, they can download the progression as
+                        a MIDI file.
+                    </p>
+
+                    <!-- Tech Stack Logos -->
+                    <div class="mt-4 flex justify-between items-center mx-4">
+                        <div class="w-8 h-8 bg-transparent ">
+                            <img src="assets/JAVA.png" alt="Logo" class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="w-8 h-8 bg-transparent">
+                            <img src="assets/SPRING.png" alt="Logo" class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="w-8 h-8 bg-transparent ">
+                            <img src="assets/ANGULAR.png" alt="Logo"
+                                class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="w-8 h-8 bg-transparent">
+                            <img src="assets/SQL.png" alt="Logo" class="w-full h-full object-contain bg-transparent">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div
+                class="md:grid grid-cols-2 w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-4 gap-4 mb-4">
+                <!-- Image Container -->
+                <div class="w-full h-full bg-transparent rounded-md">
+                    <img src="assets/CRS.png" class="w-full h-full object-cover rounded-md">
+                </div>
+
+                <!-- Content Section -->
+                <div class="flex flex-col justify-between sm:mb-4">
+                    <!-- Title and Links -->
+                    <div class="flex items-center justify-between mb-2">
+                        <h2 class="text-xl font-bold text-gray-100 ">CRS Portal</h2>
+                        <div class="flex space-x-2">
+                            <a href="https://github.com/LucaMastrofini/JAVA-Angular-CRS-Project" target="_blank"
+                                class="w-6 h-6">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="text-sm text-gray-400 text-justify">
+                        Developed a full CRUD Course Registration System for universities. The application allows
+                        students, teachers and administrators to perform various tasks such as course enrollment, course
+                        management, and user authentication.
+                    </p>
+
+                    <!-- Tech Stack Logos -->
+                    <div class="mt-4 flex justify-between items-center mx-4">
+                        <div class="w-8 h-8 bg-transparent ">
+                            <img src="assets/JAVA.png" alt="Logo" class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="w-8 h-8 bg-transparent">
+                            <img src="assets/SPRING.png" alt="Logo" class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="w-8 h-8 bg-transparent ">
+                            <img src="assets/ANGULAR.png" alt="Logo"
+                                class="w-full h-full object-contain bg-transparent">
+                        </div>
+                        <div class="w-8 h-8 bg-transparent">
+                            <img src="assets/SQL.png" alt="Logo" class="w-full h-full object-contain bg-transparent">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:grid lg:grid-cols-4 px-2">
+            <div class="hidden lg:block">
+                <!-- Your content here -->
+            </div>
+            <div
+                class="md:grid grid-cols-2 w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-4 gap-4 md:col-span-2 ">
+                <!-- Image Container -->
+                <div class="w-full h-full bg-transparent rounded-md">
+                    <img src="assets/synthesis.png" class="w-full h-full object-cover rounded-md">
+                </div>
+
+                <!-- Content Section -->
+                <div class="flex flex-col justify-between sm:mb-4">
+                    <!-- Title and Links -->
+                    <div class="flex items-center justify-between mb-2">
+                        <h2 class="text-xl font-bold text-gray-100 ">SynthThesis</h2>
+                        <div class="flex space-x-2">
+                            <a href="https://github.com/LucaMastrofini/Synthesis" target="_blank" class="w-6 h-6">
+                                <i class="fa-brands fa-github"></i></i>
+                            </a>
+                            <a href="assets/synthesis.rar" download="synthesis.rar" class="w-6 h-6">
+                                <i class="fa-solid fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="text-sm text-gray-400 text-justify">
+                        This VST synthesizer, developed with C++ and JUCE, features two oscillators, two ADSR envelopes,
+                        a filter, and a mixer, offering versatile sound design for creative audio synthesis.
+                    </p>
+
+                    <!-- Tech Stack Logos -->
+                    <div class="mt-4 grid grid-cols-2 items-center">
+                        <div class="w-full flex justify-center items-center">
+                            <div class="w-8 h-8 bg-transparent">
+                                <img src="assets/C++.png" alt="Logo"
+                                    class="w-full h-full object-contain bg-transparent">
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-center items-center">
+                            <div class="w-8 h-8 bg-transparent">
+                                <img src="assets/JUCE_Logo.png" alt="Logo"
+                                    class="w-full h-full object-contain bg-transparent">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="break-line"></div>
+    <section id="contacts" class="min-h-screen py-8 px-2 flex flex-col items-center justify-center max-w-[1240px] m-auto">
+        <p class="w-full px-2 pb-2 section-title uppercase text-xl tracking-widest">CONTACTS</p>
+        <form action="https://formspree.io/f/myzzbjzp" method="POST" class="mt-4 w-full max-w-lg rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-4">
+            <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
+            <div class="mb-4">
+                <label for="name" class="block text-white">Name</label>
+                <input type="text" id="name" name="name" required class="text-black w-full p-2 border border-gray-300 rounded mt-1">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-white">Email</label>
+                <input type="email" id="email" name="email" required class="text-black w-full p-2 border border-gray-300 rounded mt-1">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-white">Message</label>
+                <textarea id="message" name="message" required class="text-black w-full p-2 border border-gray-300 rounded mt-1"></textarea>
+            </div>
+            <div class="mb-4">
+                <div class="g-recaptcha" data-sitekey="6Ldl6a0qAAAAAM2X4Dt9BnTzh_nPT3COxkua0P6G"></div>
+            </div>
+            <div>
+                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Send</button>
+            </div>
+        </form>
+    </section>
+    <script src="js\script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</body>
+
+</html>
