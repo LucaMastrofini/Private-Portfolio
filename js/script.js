@@ -6,4 +6,13 @@ document.querySelectorAll('nav a').forEach(anchor => {
       target.scrollIntoView({ behavior: 'smooth' });
     });
   });
+
+  function validateRecaptcha() {
+    var response = grecaptcha.getResponse();
+    if (response.length === 0) {
+        alert("Please complete the reCAPTCHA.");
+        return false;
+    }
+    return true;
+}
   
