@@ -407,6 +407,16 @@
                 <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Send</button>
             </div>
         </form>
+        <script>
+            function validateRecaptcha() {
+                var response = grecaptcha.getResponse();
+                if (response.length === 0) {
+                    alert("Please complete the reCAPTCHA.");
+                    return false;
+                }
+                return true;
+            }
+            </script>
     </section>
     <script src="js\script.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
