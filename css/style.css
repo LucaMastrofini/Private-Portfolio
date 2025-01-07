@@ -41,6 +41,10 @@ section {
     color: #1C5D99;
 }
 
+.highlight-bg {
+    background-color: #1C5D99;
+}
+
 .slide-down {
     max-height: 300px;
     /* Adjust based on the content height */

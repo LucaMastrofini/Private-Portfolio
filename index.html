@@ -53,7 +53,8 @@
                 <a href="https://github.com/LucaMastrofini" target="_blank" class="text-2xl hover-zoom-icon">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/luca-mastrofini-56a28313a/" target="_blank" class="text-2xl hover-zoom-icon">
+                <a href="https://www.linkedin.com/in/luca-mastrofini-56a28313a/" target="_blank"
+                    class="text-2xl hover-zoom-icon">
                     <i class="fab fa-linkedin"></i>
                 </a>
                 <a href="https://leetcode.com/u/mastrofini/" target="_blank" class="text-2xl hover-zoom-icon">
@@ -385,29 +386,52 @@
     </section>
 
     <div class="break-line"></div>
-    <section id="contacts" class="min-h-screen py-8 px-2 flex flex-col items-center justify-center max-w-[1240px] m-auto">
+    <section id="contacts" class="min-h-screen py-8 flex flex-col items-center justify-center max-w-[1240px] mx-auto">
         <p class="w-full px-2 pb-2 section-title uppercase text-xl tracking-widest">CONTACTS</p>
-        <form action="https://formspree.io/f/myzzbjzp" method="POST" onsubmit="return validateRecaptcha();" class="mt-4 w-full max-w-lg rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-4">
-            <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
-            <div class="mb-4">
-                <label for="name" class="block text-white">Name</label>
-                <input type="text" id="name" name="name" required class="text-black w-full p-2 border border-gray-300 rounded mt-1">
+        <div class="lg:grid lg:grid-cols-2 gap-4 pt-4 px-2 w-full">
+            <form action="https://formspree.io/f/myzzbjzp" method="POST" onsubmit="return validateRecaptcha();"
+                class="w-full rounded-xl shadow-md shadow-gray-500/50 border-2 border-white p-4">
+                <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
+                <div class="mb-4">
+                    <label for="name" class="block text-white">Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="text-black w-full p-2 border border-gray-300 rounded mt-1">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-white">Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="text-black w-full p-2 border border-gray-300 rounded mt-1">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-white">Message</label>
+                    <textarea id="message" name="message" required
+                        class="text-black w-full p-2 border border-gray-300 rounded mt-1"></textarea>
+                </div>
+                <div class="mb-4">
+                    <div class="g-recaptcha" data-sitekey="6LebOq4qAAAAAFXK-aGcb5ty991IbrNu8W0cm4dy"></div>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="w-full highlight-bg text-white p-2 rounded hover:scale-103 ease-in-out duration-300">Send</button>
+                </div>
+            </form>
+            <div class="w-full flex flex-col items-center justify-center border-white p-4 mx-auto">
+                <div class="flex flex-col items-center justify-center">
+                    <h1>Lets connect on linkedIn</h1>
+                    <a href="https://www.linkedin.com/in/luca-mastrofini-56a28313a/" target="_blank"
+                        class="my-4 px-4 py-2 highlight-bg text-white rounded hover:scale-110 ease-in-out duration-300 w-full text-center"><i class="fab fa-linkedin"></i>&nbsp LinkedIn </a>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <h1 class="lg:mt-24">Download my resume</h1>
+                    <a href="assets/Luca_Mastrofini_Resume.pdf" download="Luca_Mastrofini_Resume.pdf"
+                        class="mt-4 px-4 py-2 highlight-bg text-white rounded hover:scale-110 ease-in-out duration-300 w-full text-center"><i class="fa-solid fa-download"></i>&nbsp Resume 
+                        </a>
+                </div>
+
             </div>
-            <div class="mb-4">
-                <label for="email" class="block text-white">Email</label>
-                <input type="email" id="email" name="email" required class="text-black w-full p-2 border border-gray-300 rounded mt-1">
-            </div>
-            <div class="mb-4">
-                <label for="message" class="block text-white">Message</label>
-                <textarea id="message" name="message" required class="text-black w-full p-2 border border-gray-300 rounded mt-1"></textarea>
-            </div>
-            <div class="mb-4">
-                <div class="g-recaptcha" data-sitekey="6LebOq4qAAAAAFXK-aGcb5ty991IbrNu8W0cm4dy"></div>
-            </div>
-            <div>
-                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Send</button>
-            </div>
-        </form>
+
+        </div>
+
         <script>
             function validateRecaptcha() {
                 var response = grecaptcha.getResponse();
@@ -417,7 +441,7 @@
                 }
                 return true;
             }
-            </script>
+        </script>
     </section>
     <script src="js\script.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
